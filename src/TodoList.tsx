@@ -66,7 +66,7 @@ const TodoList = ({ todos, addTodo, toggleTodo }: Props) => {
         className="cursor-pointer"
       >
         <Checkbox checked={todo.done} />
-        <Typography className={todo.done ? 'line-through' : ''}>
+        <Typography noWrap={false} className={todo.done ? 'line-through' : ''}>
           {todo.text}
         </Typography>
       </ListItem>
